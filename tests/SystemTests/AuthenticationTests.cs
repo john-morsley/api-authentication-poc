@@ -25,6 +25,22 @@ namespace SystemTests
         }
 
         [Test]
+        public async Task CheckAllowAnonymous()
+        {
+            // Arrange...
+            _client.DefaultRequestHeaders.Remove("Authorization");
+            
+            // Act...
+            var httpResponse = await _client.GetAsync("welcome/not-secret/");
+            
+            // Assert...
+            httpResponse.IsSuccessStatusCode.Should().BeTrue();
+            httpResponse.StatusCode.Should().Be(HttpStatusCode.OK);
+            var response = await httpResponse.Content.ReadAsStringAsync();
+            //response.Length.Should().Be(0);
+        }
+
+        [Test]
         public async Task CheckValidCredentialsSucceed()
         {
             // Arrange...
@@ -37,7 +53,7 @@ namespace SystemTests
             _client.DefaultRequestHeaders.Add("Authorization", $"Basic {encodedCredentials}");
             
             // Act...
-            var httpResponse = await _client.GetAsync("weatherforecast");
+            var httpResponse = await _client.GetAsync("welcome/secret/");
             
             // Assert...
             httpResponse.IsSuccessStatusCode.Should().BeTrue();
@@ -59,7 +75,7 @@ namespace SystemTests
             _client.DefaultRequestHeaders.Add("Authorization", $"Basic {encodedCredentials}");
             
             // Act...
-            var httpResponse = await _client.GetAsync("weatherforecast");
+            var httpResponse = await _client.GetAsync("welcome/secret/");
             
             // Assert...
             httpResponse.IsSuccessStatusCode.Should().BeFalse();
