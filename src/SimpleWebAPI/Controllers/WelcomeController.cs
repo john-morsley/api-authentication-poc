@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SimpleWebAPI.Controllers
 {
-    [Authorize]
+    [Authorize] 
     [ApiController]
     [Route("[controller]")]
     public class WelcomeController : ControllerBase

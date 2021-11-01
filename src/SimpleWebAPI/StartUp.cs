@@ -44,7 +44,10 @@ namespace SimpleWebAPI
 
             app.UseRouting();
 
+            // Who are you?
             app.UseAuthentication();
+            
+            // Are you allowed?
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
