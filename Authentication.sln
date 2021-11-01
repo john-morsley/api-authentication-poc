@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebAPI", "src\SimpleW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "src\Authentication\Authentication.csproj", "{11A86843-5349-4F23-9948-5C13926C46A4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{41E3F5CC-4AFD-4CE9-A387-D241CD3698E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemTests", "tests\SystemTests\SystemTests.csproj", "{36D15255-DCD4-4CB7-A329-65E28315FEF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A2B335F1-BBCD-4A05-B149-9B746D0BF938} = {BF1B7B15-AA3C-4B9B-9688-15C6C06FACD1}
 		{11A86843-5349-4F23-9948-5C13926C46A4} = {BF1B7B15-AA3C-4B9B-9688-15C6C06FACD1}
+		{36D15255-DCD4-4CB7-A329-65E28315FEF9} = {41E3F5CC-4AFD-4CE9-A387-D241CD3698E9}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A2B335F1-BBCD-4A05-B149-9B746D0BF938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +29,9 @@ Global
 		{11A86843-5349-4F23-9948-5C13926C46A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11A86843-5349-4F23-9948-5C13926C46A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11A86843-5349-4F23-9948-5C13926C46A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36D15255-DCD4-4CB7-A329-65E28315FEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D15255-DCD4-4CB7-A329-65E28315FEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D15255-DCD4-4CB7-A329-65E28315FEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D15255-DCD4-4CB7-A329-65E28315FEF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
