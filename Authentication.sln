@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BF1B7B15-AA3C-4B9B-9688-15C6C06FACD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebAPI", "src\SimpleWebAPI\SimpleWebAPI.csproj", "{A2B335F1-BBCD-4A05-B149-9B746D0BF938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "src\Authentication\Authentication.csproj", "{11A86843-5349-4F23-9948-5C13926C46A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A2B335F1-BBCD-4A05-B149-9B746D0BF938} = {BF1B7B15-AA3C-4B9B-9688-15C6C06FACD1}
+		{11A86843-5349-4F23-9948-5C13926C46A4} = {BF1B7B15-AA3C-4B9B-9688-15C6C06FACD1}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2B335F1-BBCD-4A05-B149-9B746D0BF938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2B335F1-BBCD-4A05-B149-9B746D0BF938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2B335F1-BBCD-4A05-B149-9B746D0BF938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2B335F1-BBCD-4A05-B149-9B746D0BF938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A86843-5349-4F23-9948-5C13926C46A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A86843-5349-4F23-9948-5C13926C46A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A86843-5349-4F23-9948-5C13926C46A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A86843-5349-4F23-9948-5C13926C46A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
